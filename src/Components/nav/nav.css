@@ -1,0 +1,76 @@
+/* nav{
+    background: rgba(18, 18, 18, 0.6);
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 1em;
+    border-radius: 2rem;
+} */
+
+nav{
+    background: var(--color-bg-variant);
+    z-index: 2;
+    padding: 1.5rem;
+    position: fixed;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.nav__link__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+nav a {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+    text-align: center;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+
+    
+}
+
+.active-link{
+    background: var(--color-yellow-theme);
+    color: var(--color-bg);
+    border-radius: 50%;
+  }
+
+
+
+/*==============MEDIA QUERY FOR TABLET (MEDIUM DEVICES / SCREEN WIDTH 1024PX OR SMALLER )====================*/
+
+@media screen and (max-width: 1024px) {
+  
+
+}
+
+
+/*==============MEDIA QUERY FOR PHONES (SMALL DEVICES / SCREEN WIDTH 600PX OR SMALLER )====================*/
+
+@media screen and (max-width: 600px) {
+    .nav__link__wrapper > p {
+
+    }
+
+
+}

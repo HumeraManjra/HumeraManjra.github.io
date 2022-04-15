@@ -1,0 +1,39 @@
+.project__section{
+ 
+
+}
+
+.wrapper{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 16em auto;
+    gap: 3em;
+
+}
+
+article{
+    width: 50%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.article__right{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.article__right > h3 {
+    font-size: 2em;
+}
+
+.icons{
+    display: flex;
+    gap: 1.5em;
+
+}
