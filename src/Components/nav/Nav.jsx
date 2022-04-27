@@ -13,8 +13,7 @@ function Nav() {
 
 
   return (
-    <nav>
-
+    <nav >
       <div className="nav__link__wrapper">
         <NavHashLink  to={"/#"} smooth  onClick={()=> setActiveLink('#')} className={activeLink==='#' ? 'active-link' : ''}>
           <AiOutlineHome/>
