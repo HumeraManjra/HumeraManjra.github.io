@@ -1,20 +1,13 @@
 .contact__section{
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-.form__wrapper{
     background: var(--color-bg-variant);
+
 }
-
-
 
 form{
-    /* border: 2px solid blueviolet; */
     display: flex;
     flex-direction: column;
     gap: 3em;
@@ -55,6 +48,27 @@ input {
     background: white;
     color: black;
 
+}
+
+/*==============MEDIA QUERY FOR TABLET (MEDIUM DEVICES / SCREEN WIDTH 1024PX OR SMALLER )====================*/
+
+@media screen and (max-width: 1024px) {
+    .name__email__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+
+/*==============MEDIA QUERY FOR PHONES (SMALL DEVICES / SCREEN WIDTH 600PX OR SMALLER )====================*/
+
+@media screen and (max-width: 600px) {
+    .name__email__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
 }
 
 
