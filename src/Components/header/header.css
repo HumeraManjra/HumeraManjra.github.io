@@ -1,5 +1,5 @@
 header{
-    padding-top: 7rem;
+    padding-top: 5rem;
     overflow: hidden;
 }
 
@@ -45,15 +45,17 @@ header{
 }
 
 /*========= HEADER IMAGE =========*/
+
+
     .me{
            background: var(--color-yellow-theme);
-           position: absolute;
-           left: calc(50% - 8rem);
            margin-top: 2.5em;
            overflow: hidden;
            width: 16rem;
            height: 16rem;
            border-radius: 50%;
+           position: relative;
+           left: calc(50% - 8rem);
     }
 
     /*========= SCROLL DOWN =========*/
@@ -86,6 +88,9 @@ header{
      .header__social, .scroll__down {
          display: none;
      }
+     .header__container > h5 {
+        font-size: 1.25em;
+    }
 }
 
 
