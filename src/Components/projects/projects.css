@@ -1,18 +1,13 @@
-.project__section{
- 
-
-}
 
 .wrapper{
-    max-width: 80%;
     display: flex;
-    justify-content: center;
-    margin: 16em auto;
     gap: 3em;
+    margin-bottom: 8em;
 
 }
 
-article{
+.article__rightside,
+.article__leftside{
     width: 50%;
 }
 
@@ -23,17 +18,46 @@ img{
 }
 
 
-.article__right{
+.article__rightside{
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.article__right > h3 {
+.article__rightside > h3 {
     font-size: 2em;
 }
 
 .icons{
     display: flex;
     gap: 1.5em;
+
+}
+.project__links{
+    display: flex;
+    gap: 1.5em;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .wrapper{
+        flex-direction: column;
+    }
+
+}
+
+
+/*==============MEDIA QUERY FOR PHONES (SMALL DEVICES / SCREEN WIDTH 600PX OR SMALLER )====================*/
+
+@media screen and (max-width: 600px) {
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .article__rightside,
+    .article__leftside{
+        width: 100%;
+    }
+
 
 }
