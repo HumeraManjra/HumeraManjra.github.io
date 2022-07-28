@@ -3,6 +3,7 @@
     display: flex;
     gap: 3em;
     margin-bottom: 8em;
+    align-items: center;
 
 }
 
@@ -13,8 +14,8 @@
 
 img{
     width: 100%;
-    height: auto;
     display: block;
+    object-fit: cover;
 }
 
 

@@ -14,7 +14,7 @@
 :root{
     --color-bg: rgb(0,0,0);
     --color-bg-variant: rgba(18, 18, 18, 0.6);
-    --color-yellow-theme: #fbc02d;
+    --color-yellow-theme: #fbc02d; color-scheme: ;
     --color-white: white;
 
     --container-width-lg: 75%;
