@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHtml5 } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import macbook from "../../assets/macbook.jpg";
+import { SiReact, SiCss3 } from "react-icons/si";
+import macbook from "../../assets/SajjMockup.png";
 import "./projects.css";
 import "animate.css";
 
@@ -21,15 +21,15 @@ function ProjectOne() {
           <h4>MADE WITH</h4>
           <div className="icons">
             <FaHtml5 className="skill__icon" />
-            <i className="devicon-sass-original"></i>
-            <SiJavascript className="skill__icon" />
+            <SiCss3 className="skill__icon" />
+            <SiReact className="skill__icon" />
           </div>
         </div>
-        <div className="project__links">
+        {/* <div className="project__links">
           <a href="https://sajjboutique.ca/" target="blank">
             Live Site
           </a>
-        </div>
+        </div> */}
       </div>
     </article>
   );

@@ -29,7 +29,6 @@
 .skills li {
     flex-basis: 24%;
     text-align: center;
-    cursor: pointer;
     padding-top: 0.25em;
 }
 
