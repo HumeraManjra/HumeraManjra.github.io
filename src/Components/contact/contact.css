@@ -1,18 +1,15 @@
-.contact__section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-bg-variant);
-
+#contact{
+    padding: 6em 0;
 }
-
 form{
     display: flex;
     flex-direction: column;
     gap: 3em;
     padding: 3em;
     text-transform: uppercase;
+}
+textarea{
+    padding: 1em;
 }
 
 input, button, textarea{
@@ -38,6 +35,16 @@ input {
     flex-direction: column;
 } 
 
+.error {
+    margin-top: 1em;
+    text-transform: capitalize;
+}
+
+.error, label * {
+    color: red;
+    font-size: .75em;
+}
+
 .btns_wrapper > button {
     text-transform: uppercase;
     padding: 1em;
@@ -48,6 +55,22 @@ input {
     background: white;
     color: black;
 
+}
+
+.submit__msg{
+    margin: 2em auto;
+    background: rgba(241, 104, 33, 0.8);
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+    font-size: 1.25em;
+}
+.success__icon{
+    font-size: 2em;
 }
 
 /*==============MEDIA QUERY FOR TABLET (MEDIUM DEVICES / SCREEN WIDTH 1024PX OR SMALLER )====================*/
@@ -67,7 +90,12 @@ input {
     .name__email__wrapper{
         display: flex;
         flex-direction: column;
-        gap: 2em;
+        gap: 1em;
+    }
+
+    form{
+        gap: 1em;
+        padding: 0;
     }
 }
 
