@@ -1,0 +1,24 @@
+footer {
+    min-width: 100%;
+    text-align: center;
+    color: white;
+
+}
+
+.back_to_top_link{
+    margin: 1em auto;
+    font-size: 3.25em;
+}
+
+
+/*==============MEDIA QUERY FOR PHONES (SMALL DEVICES / SCREEN WIDTH 600PX OR SMALLER )====================*/
+@media screen and (max-width: 52em) {
+
+    .back_to_top_link{
+        margin-bottom: 2em;
+
+    }
+    
+
+
+}

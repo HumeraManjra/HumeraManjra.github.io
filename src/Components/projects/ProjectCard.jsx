@@ -1,22 +1,17 @@
 import React from "react";
 import { FaHtml5 } from "react-icons/fa";
 import { SiReact, SiCss3 } from "react-icons/si";
-import macbook from "../../assets/SajjMockup.png";
-import "./projects.css";
-import "animate.css";
 
-function ProjectOne() {
+function ProjectCard({ item }) {
+  const { img, heading, Description } = item;
   return (
     <article className="wrapper">
       <div className="article__leftside">
-        <img src={macbook} alt="" />
+        <img src={img} alt="" />
       </div>
       <div className="article__rightside">
-        <h3>SajjBoutique</h3>
-        <p>
-          SajjBoutique is a responsive e-commerce web application for a local
-          clothing store
-        </p>
+        <h3>{heading}</h3>
+        <p>{Description}</p>
         <div className="icons_wrapper">
           <h4>MADE WITH</h4>
           <div className="icons">
@@ -26,7 +21,7 @@ function ProjectOne() {
           </div>
         </div>
         {/* <div className="project__links">
-          <a href="https://sajjboutique.ca/" target="blank">
+          <a href={URL} target="blank">
             Live Site
           </a>
         </div> */}
@@ -35,4 +30,4 @@ function ProjectOne() {
   );
 }
 
-export default ProjectOne;
+export default ProjectCard;

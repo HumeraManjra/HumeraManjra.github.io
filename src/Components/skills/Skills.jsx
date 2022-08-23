@@ -6,8 +6,8 @@ import { DiResponsive } from "react-icons/di";
 
 function Skills() {
   return (
-    <section id="skills" className="skills__section container">
-      <h2>SKILLS</h2>
+    <section id="skills" className="section_center container">
+      <h2 className="heading">SKILLS</h2>
       <article className="skills__container">
         <ul className="skills">
           <li>

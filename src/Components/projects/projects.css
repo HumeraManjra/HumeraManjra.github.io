@@ -1,10 +1,7 @@
 
 .wrapper{
     display: flex;
-    gap: 3em;
-    margin-bottom: 8em;
     align-items: center;
-
 }
 
 .article__rightside,
@@ -38,26 +35,23 @@ img{
     gap: 1.5em;
 }
 
-
-@media screen and (max-width: 1024px) {
-    .wrapper{
-        flex-direction: column;
-    }
-
-}
-
-
 /*==============MEDIA QUERY FOR PHONES (SMALL DEVICES / SCREEN WIDTH 600PX OR SMALLER )====================*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 50em) {
     .wrapper{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .article__rightside,
     .article__leftside{
         width: 100%;
+    }
+
+    .article__rightside{
+        padding: 0 2.25em;
+        gap: 0.75em;
     }
 
 

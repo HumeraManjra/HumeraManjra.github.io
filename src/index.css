@@ -14,12 +14,10 @@
 :root{
     --color-bg: rgb(0,0,0);
     --color-bg-variant: rgba(18, 18, 18, 0.6);
-    --color-yellow-theme: #fbc02d; 
-    --color-white: white;
+    --color-yellow-theme:#f16821;
 
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
+
+    --color-white: white;
 
     --transition: all 400ms ease;
 
@@ -44,10 +42,10 @@ body{
 
 /* =================== GENERAL STYLING / GLOBAL STYLING ======================= */
 .container{
-    width: var(--container-width-lg);
-    margin: 0 auto 6em auto;
-    /* border: 2px solid green; */
-
+    margin: 0 auto 8em auto;
+    min-height: 100vh;
+    width: 70%;
+    padding: 2em 0;
 }
 h1, h2, h3, h4, h5{
     font-weight: 500;
@@ -57,16 +55,22 @@ h1{
     text-transform: uppercase;
 }
 
-section{
-    min-height: 100vh;    
+.section_center{
+    min-height: 100vh; 
+    letter-spacing: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bg-variant);
 }
 
 section > h2 {
     text-align: center;
     color: var(--color-yellow-theme);
-    margin-bottom: 3rem;
     font-size: 2.2em;
     text-transform: uppercase;
+    text-shadow: 1.15px 1.15px var(--color-white);
 }
 
 a{
@@ -105,34 +109,34 @@ img{
     object-fit: cover;
 }
 
-/* article{
-    border: 2px solid var(--color-yellow-theme);
-} */
+
 
 
 /*==============MEDIA QUERY FOR TABLET (MEDIUM DEVICES / SCREEN WIDTH 1024PX OR SMALLER )====================*/
 
-@media screen and (max-width: 1024px) {
-    .container{
-        width: var(--container-width-md);
-    }
+/* @media screen and (max-width: 1024px) {
 
-    section{
-        margin-top: 6rem;
-    }
-
-}
+} */
 
 
 /*==============MEDIA QUERY FOR PHONES (SMALL DEVICES / SCREEN WIDTH 600PX OR SMALLER )====================*/
 
 @media screen and (max-width: 600px) {
-    .container{
-        width: var(--container-width-sm);
-    }
 
+    .container{
+        width: 90vw;
+    }
     section > h2 {
         margin-bottom: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 20em) {
+
+    .container{
+        min-width: 100%;
     }
 
 }

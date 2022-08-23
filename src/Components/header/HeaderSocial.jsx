@@ -11,9 +11,6 @@ function HeaderSocial() {
       <a href="https://github.com/HumeraManjra" target="_blank">
         <BsGithub />
       </a>
-      {/* <a href="https://www.hackerrank.com/humeramanjra" target="_blank">
-        <SiHackerrank />
-      </a> */}
     </aside>
   );
 }
