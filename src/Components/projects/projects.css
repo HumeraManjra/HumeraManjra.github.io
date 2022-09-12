@@ -1,58 +1,71 @@
 
-.wrapper{
-    display: flex;
-    align-items: center;
+
+#projects > .wrapper {
+  background:none;
+  padding: 0;
+}
+
+.project__wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2em;
 }
 
 .article__rightside,
-.article__leftside{
-    width: 50%;
+.article__leftside {
+  width: 50%;
 }
 
-img{
-    width: 100%;
-    display: block;
-    object-fit: cover;
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-
-.article__rightside{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+.article__rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 .article__rightside > h3 {
-    font-size: 2em;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
-.icons{
-    display: flex;
-    gap: 1.5em;
-
+.icons {
+  display: flex;
+  gap: 1.5em;
 }
-.project__links{
-    display: flex;
-    gap: 1.5em;
+.project__links {
+  display: flex;
+  gap: 1.5em;
 }
 
 /*==============MEDIA QUERY FOR PHONES (SMALL DEVICES / SCREEN WIDTH 600PX OR SMALLER )====================*/
 
 @media screen and (max-width: 50em) {
-    .wrapper{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .project__wrapper{
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
 
-    .article__rightside,
-    .article__leftside{
-        width: 100%;
-    }
+  .article__rightside,
+  .article__leftside {
+    width: 100%;
+  }
 
-    .article__rightside{
-        padding: 0 2.25em;
-        gap: 0.75em;
-    }
+  .article__rightside {
+    padding: 0 0.5em;
+    gap: 0.75em;
+    text-align: center;
+  }
 
-
+  .article__rightside > h3 {
+    font-size: 1.5em;
+  }
+  .article__rightside > p {
+    font-size: 0.8em;
+  }
 }

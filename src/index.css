@@ -15,10 +15,7 @@
     --color-bg: rgb(0,0,0);
     --color-bg-variant: rgba(18, 18, 18, 0.6);
     --color-yellow-theme:#f16821;
-
-
     --color-white: white;
-
     --transition: all 400ms ease;
 
 }
@@ -44,8 +41,19 @@ body{
 .container{
     margin: 0 auto 8em auto;
     min-height: 100vh;
+    margin-right: 7em;
+    letter-spacing: 0.1rem;
+}
+.wrapper{
     width: 70%;
-    padding: 2em 0;
+    margin: 0 auto; 
+    padding: 8em 0;
+    background: var(--color-bg-variant);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
 h1, h2, h3, h4, h5{
     font-weight: 500;
@@ -55,17 +63,9 @@ h1{
     text-transform: uppercase;
 }
 
-.section_center{
-    min-height: 100vh; 
-    letter-spacing: 0.1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-bg-variant);
-}
 
-section > h2 {
+
+.wrapper > h2 {
     text-align: center;
     color: var(--color-yellow-theme);
     font-size: 2.2em;
@@ -124,12 +124,12 @@ img{
 @media screen and (max-width: 600px) {
 
     .container{
-        width: 90vw;
+        margin: 0 auto 6em auto;
+        margin-right: auto;
     }
-    section > h2 {
-        margin-bottom: 2rem;
+    .wrapper{
+        width: 90%;
     }
-
 }
 
 

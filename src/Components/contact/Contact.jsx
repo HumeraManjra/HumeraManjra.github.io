@@ -69,70 +69,72 @@ function Contact() {
   }, [formErrors]);
 
   return (
-    <section id="contact" className="section_center container">
-      <h2>Contact</h2>
-      {isAlertVisible && (
-        <div className="submit__msg">
-          <BsCheckCircleFill className="success__icon" />
-          <h6>Your Message has been sent</h6>
-        </div>
-      )}
-      <article className="form__wrapper">
-        <form ref={form} action="" onSubmit={handleSubmit}>
-          <div className="name__email__wrapper">
-            <div className="name">
-              <label htmlFor="name">
-                Name <span>*</span>
-              </label>
-              <input
-                type="text"
-                name="name"
-                value={formValues.name}
-                onChange={handleChange}
-              />
-              <p className="error">{formErrors.name}</p>
+    <section id="contact" className="container">
+      <div className="wrapper">
+        <h2>Contact</h2>
+        {isAlertVisible && (
+          <div className="submit__msg">
+            <BsCheckCircleFill className="success__icon" />
+            <h6>Your Message has been sent</h6>
+          </div>
+        )}
+        <article className="form__wrapper">
+          <form ref={form} action="" onSubmit={handleSubmit}>
+            <div className="name__email__wrapper">
+              <div className="name">
+                <label htmlFor="name">
+                  Name <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formValues.name}
+                  onChange={handleChange}
+                />
+                <p className="error">{formErrors.name}</p>
+              </div>
+              <div className="email">
+                <label htmlFor="email">
+                  email <span>*</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formValues.email}
+                  onChange={handleChange}
+                />
+                <p className="error">{formErrors.email}</p>
+              </div>
             </div>
-            <div className="email">
-              <label htmlFor="email">
-                email <span>*</span>
+            <div className="message__wrapper">
+              <label htmlFor="message">
+                message <span>*</span>
               </label>
-              <input
-                type="email"
-                name="email"
-                value={formValues.email}
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                value={formValues.message}
                 onChange={handleChange}
-              />
-              <p className="error">{formErrors.email}</p>
+              ></textarea>
+              <p className="error">{formErrors.message}</p>
             </div>
-          </div>
-          <div className="message__wrapper">
-            <label htmlFor="message">
-              message <span>*</span>
-            </label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              value={formValues.message}
-              onChange={handleChange}
-            ></textarea>
-            <p className="error">{formErrors.message}</p>
-          </div>
-          <div className="btns_wrapper">
-            <button className="send_msg_btn" type="submit">
-              send message
-            </button>
-            <button
-              className="reset_btn"
-              type="reset"
-              onClick={() => SetFormValues(initialValues)}
-            >
-              reset
-            </button>
-          </div>
-        </form>
-      </article>
+            <div className="btns_wrapper">
+              <button className="send_msg_btn" type="submit">
+                send message
+              </button>
+              <button
+                className="reset_btn"
+                type="reset"
+                onClick={() => SetFormValues(initialValues)}
+              >
+                reset
+              </button>
+            </div>
+          </form>
+        </article>
+      </div>
     </section>
   );
 }

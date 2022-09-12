@@ -2,6 +2,7 @@
 header{
     padding-top: 5rem;
     margin: 0 auto 8em auto;
+    margin-right: 7em;
 
 }
 
@@ -18,7 +19,7 @@ article > h5 {
     font-size: 1.6em;
 }
 
-/*========= CTA =========*/
+/*========= CTA  RESUME / CONTACT BUTTONS=========*/
 
 .cta{
     margin-top: 2.5rem;
@@ -63,7 +64,7 @@ article > h5 {
            left: calc(50% - 8rem);
     }
 
-    /*========= SCROLL DOWN =========*/
+    /*========= SCROLL DOWN LINK =========*/
 
     .scroll__down{
         position: absolute;

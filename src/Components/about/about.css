@@ -1,7 +1,14 @@
 #about{
-    gap: 2em;
+    padding: 2em 0;
+    margin: 0 auto 8em auto;
+    margin-right: 7em;
+    letter-spacing: 0.1rem;
 }
 
+#about > .wrapper{
+    justify-content: flex-start;
+    gap: 3em;
+}
 
 .about__container{
     display: flex;
@@ -17,4 +24,15 @@
     gap: 2em;
     font-size: 2em;
     margin-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        margin-right: auto;
+
+    }
+
+    #about > .wrapper{
+        padding: 4em 0;
+    }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import CTA from "./CTA";
 import me from "../../assets/me.png";
-import HeaderSocial from "./HeaderSocial";
+import SocialLinks from "../utils/SocialLinks";
 import { NavHashLink } from "react-router-hash-link";
 
 function Header() {
@@ -18,10 +18,14 @@ function Header() {
         <article>
           <img src={me} alt="" className="me" />
         </article>
-        <NavHashLink to={"/#about"} className="scroll__down">
-          Scroll Down
-        </NavHashLink>
-        <HeaderSocial />
+        <aside>
+          <NavHashLink to={"/#about"} className="scroll__down">
+            Scroll Down
+          </NavHashLink>
+        </aside>
+        <aside className="header__social">
+          <SocialLinks />
+        </aside>
       </div>
     </header>
   );
