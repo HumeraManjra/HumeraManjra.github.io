@@ -68,4 +68,7 @@ img {
   .article__rightside > p {
     font-size: 0.8em;
   }
+  .icons {
+    justify-content: center;
+  }
 }
