@@ -1,6 +1,5 @@
 import SajjBoutique from "../../assets/SajjMockup.png";
 import CreamyCreations from "../../assets/CreamyCreationMockup.png";
-import MIRECIPEBOOK from "../../assets/RecipeMockup.png";
 import { DiHtml5, DiCss3, DiReact, DiSass } from "react-icons/di";
 
 let Data = [
@@ -24,21 +23,11 @@ let Data = [
     URL: "https://creamycreations.ca/",
   },
 
-  {
-    id: "003",
-    img: MIRECIPEBOOK,
-    heading: "MIRECIPEBOOK",
-    Description:
-      "MIRECIPEBOOK is a responsive web application for publishing and browsing recipes",
-    Icons: [DiHtml5, DiCss3, DiReact],
-    URL: " ",
-  },
-
   //   {
-  //   id: "004",
+  //   id: "003",
   //   img: "Coming soon...",
   //   heading: "Pharmasave Speers Pharmacy",
-  //   Description: "Pharmasave Speers Pharmacy is a responsive web application for filling online prescription, booking appointment, view services and more",
+  //   Description: "Pharmasave Speers Pharmacy is a responsive web application for filling online prescription, booking appointments, view services and more",
   //   Icons: [DiHtml5, DiCss3, DiReact],
   //   URL: " ",
   // },
