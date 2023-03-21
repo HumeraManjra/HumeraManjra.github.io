@@ -23,6 +23,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-transform: capitalize;
 }
 
 nav a {

@@ -19,31 +19,31 @@ export let navIcons = [
   {
     id: "icon001",
     icon: BiHome,
-    title: "Home",
+    title: "home",
     path: "/#",
   },
   {
     id: "icon002",
     icon: BiUser,
-    title: "About",
+    title: "about",
     path: "/#about",
   },
   {
     id: "icon003",
     icon: VscTools,
-    title: "Skills",
+    title: "skills",
     path: "/#skills",
   },
   {
     id: "icon004",
     icon: BiTask,
-    title: "Projects",
+    title: "projects",
     path: "/#projects",
   },
   {
     id: "icon005",
     icon: BiMailSend,
-    title: "Contact",
+    title: "contact",
     path: "/#contact",
   },
 ];

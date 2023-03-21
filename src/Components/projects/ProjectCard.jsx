@@ -14,7 +14,11 @@ function ProjectCard({ item }) {
           <h4>MADE WITH</h4>
           <div className="icons">
             {Icons.map((Icon, index) => {
-              return <Icon className="skill__icon" key={index} />;
+              return (
+                <ul>
+                  <li>{Icon}</li>
+                </ul>
+              );
             })}
           </div>
         </div>
